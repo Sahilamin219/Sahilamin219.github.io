@@ -1,0 +1,22 @@
+{
+  "name": "sahilamin219.github.io",
+  "version": "1.0.0",
+  "description": "testing this",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahilamin219/Sahilamin219.github.io.git"
+  },
+  "author": "sahil amin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahilamin219/Sahilamin219.github.io/issues"
+  },
+  "homepage": "https://github.com/Sahilamin219/Sahilamin219.github.io#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.0"
+  }
+}
