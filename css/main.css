@@ -5284,3 +5284,8 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0; }
+
+
+#homepage_outter { position:relative; width:100%; height:100%;}
+#homepage_inner { position:absolute; top:0; left:0; z-index:10; width:100%; height:100%;}
+#homepage_underlay { position:absolute; top:0; left:0; z-index:9; width:800px; height:500px; display:none;}

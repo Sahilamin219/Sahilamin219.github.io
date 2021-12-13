@@ -45,7 +45,7 @@
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+      <div class="page-header-image" data-parallax="true" id = "bcimage1" style="background-image: url('images/cc-bg-1.jpg')"></div>
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="images/sahilpic.jpeg" alt="Image"/></a></div>
@@ -538,5 +538,30 @@
     <script src="scripts/main.js?ver=1.1.0"></script>
     <script type="index.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script type="text/javascript">
+       $(document).ready(function() {
+        var urls = ['https://pp.userapi.com/c629327/v629327473/db66/r051joYFRX0.jpg', 'https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg', 'https://img.wikinut.com/img/gycf69_-6rv_5fol/jpeg/0/Best-Friends-Img-Src:Image:-FreeDigitalPhotos.net.jpeg', 'http://www.travelettes.net/wp-content/uploads/2014/03/IMG_3829-Medium-600x400.jpg'];
+        var urls1 = ['Screen1.png', 'Screen2.png', 'Screen3.png']
+        var counter=0;
+        var colours=["red","green","blue"];
+        $(function() {
+            change();
+
+            function change() {
+
+              setTimeout(change,5000);
+               var x = document.getElementById("bcimage1");
+               x.style.color = colours[counter] ;
+               x.style.backgroundImage = `url(images/${urls1[counter]})`; 
+              // $('bcimage').css({'background-image' : 'url(" + urls[counter] + ")' } );
+              // $('bcimage').css('background-color', colours[counter] );
+              counter++;
+              // console.log(`url(images/${urls1[counter]} )`);
+              if(counter==3){ counter=0;}
+            }
+        });
+      });
+
+    </script>
   </body>
 </html>
